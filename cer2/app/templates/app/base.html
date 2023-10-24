@@ -35,9 +35,12 @@
                 {% for entidad in dataEnt %}
                     <li><a role="button" method="get" class="dropdown-item" name="filter" type="search" href="#{{entidad}}">{{entidad}}</a></li>
                 {% endfor %}
+                <li> <a role="button" href="https://github.com/FranCapelli/CER2-CapelliFrancisca.git"> Github </a></li>
+
             </ul>
         </div>
         </br>
+
         {% block content %}
 
         {% endblock %}
