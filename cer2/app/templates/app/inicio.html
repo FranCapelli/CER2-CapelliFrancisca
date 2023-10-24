@@ -1,0 +1,23 @@
+{% extends "app/base.html" %}
+    {% block content %}
+    <div id="#inicio" class="container-fluid">
+        <ul>
+            {% for iCom in dataCom %}
+                <li style="display: inline-block" >
+                    <div class="card" style="width: 18rem;">
+                        {% for iEnt in dataEnt %}
+                            {% if iEnt == iCom.entidad.nombre%}
+                                <img src="iEnt.logo" class="card-img-top">
+                            {% endif %}
+                        {% endfor %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ iCom.titulo }}</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">{{ iCom.entidad.nombre }}</h6>
+                            <p class="card-text">{{ iCom.detalle }}</p>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+body{
+    background-color: #e5e7f6;
+    margin:3vw
+}
+
+nav{
+    background-color: #1985A1;
+}
+
+#log_o{
+    max-width: 10vw;  
+    height: auto; 
+    margin-left: 3vw;
+}
+
+#sis{
+    text-align:center;
+}
+
+hr.rounded {
+    border-top: 3px solid;
+    color: #8c1b13;
+  }
+
+#nav1,#nav2{
+    color:rgb(255, 255, 255)
+}
+
+#filtro{
+    margin-left: 3vw;
+    background-color: #0a2342;
+}
+
+.card{
+    background-color: #ffde4a8c;
+}
+
